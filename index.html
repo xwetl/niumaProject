@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牛马加速器</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 实时工资显示区域 -->
+        <div class="salary-counter">
+            <div class="salary-title">今日工资实时累计</div>
+            <div class="salary-amount">
+                <span class="currency">¥</span>
+                <div class="digit-container" id="salaryDigits">
+                    <span class="digit">0</span>
+                    <span class="digit">0</span>
+                    <span class="digit">0</span>
+                    <span class="digit">0</span>
+                    <span class="digit">0</span>
+                    <span class="decimal">.</span>
+                    <span class="digit">0</span>
+                    <span class="digit">0</span>
+                </div>
+            </div>
+            <div class="salary-rate">
+                <span>每秒收入：</span>
+                <span id="perSecond">0.00</span>
+                <span>元</span>
+            </div>
+        </div>
+
+        <!-- 上班按钮 -->
+        <button id="startBtn" class="start-btn">上班</button>
+
+        <!-- 下班按钮 -->
+        <button id="offDutyBtn" class="off-duty-btn">下班</button>
+
+        <!-- 小宠物区域 -->
+        <div id="petContainer" class="pet-container">
+            <div class="pet">
+                <div class="pet-body">
+                    <div class="pet-head">
+                        <div class="pet-face">
+                            <div class="pet-eyes"></div>
+                            <div class="pet-mouth"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="messageBox" class="message-box"></div>
+        </div>
+
+        <!-- 设置按钮 -->
+        <button id="settingsBtn" class="settings-btn">设置</button>
+    </div>
+
+    <!-- 设置弹窗 -->
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <h2>设置</h2>
+            <div class="setting-item">
+                <label>称呼设置</label>
+                <select id="titleSelect">
+                    <option value="老板">老板</option>
+                    <option value="主人">主人</option>
+                    <option value="亲爱的牛马">亲爱的牛马</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <label>语气设置</label>
+                <select id="styleSelect">
+                    <option value="humorous">幽默</option>
+                    <option value="formal">正式</option>
+                    <option value="cute">可爱</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <label for="salary">月薪（元）</label>
+                <input type="number" id="salary" placeholder="请输入月薪">
+            </div>
+            <div class="setting-item">
+                <label for="hours">工作时长（小时）</label>
+                <input type="number" id="hours" placeholder="请输入工作时长">
+            </div>
+            <button id="saveSettings" class="save-btn">保存设置</button>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
