@@ -196,11 +196,11 @@ class NiuMaCalculator {
             ],
             formal: [
                 `${this.settings.title}，本次摸🐟${timeStr}，收入 ${amount} 人民币`,
-                `${this.settings.title}，今日摸🐟${timeStr}，收入 ${amount} 元`
+                `${this.settings.title}，今日摸🐟${timeStr}，收入 ${amount} 人民币`
             ],
             cute: [
-                `${this.settings.title}，好厉害哦，工作了${timeStr}，赚了 ${amount} 元呢`,
-                `${this.settings.title}，今天辛苦了，工作了${timeStr}，赚了 ${amount} 元`
+                `${this.settings.title}，好厉害哦，工作了${timeStr}，赚了 ${amount} 人民币呢`,
+                `${this.settings.title}，今天辛苦了，工作了${timeStr}，赚了 ${amount} 人民币`
             ]
         };
 
