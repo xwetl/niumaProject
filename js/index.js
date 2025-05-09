@@ -192,7 +192,7 @@ class NiuMaCalculator {
         const messages = {
             humorous: [
                 `${this.settings.title}，你太棒了，工作了${timeStr}，赚了 ${amount} 人民币`,
-                `${this.settings.title}，今天又是充实的一天，摸🐟了${timeStr}，赚了 ${amount} 元`
+                `${this.settings.title}，今天又是充实的一天，摸🐟了${timeStr}，赚了 ${amount} 人民币`
             ],
             formal: [
                 `${this.settings.title}，本次摸🐟${timeStr}，收入 ${amount} 元`,
