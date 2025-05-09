@@ -147,7 +147,7 @@ class NiuMaCalculator {
 
     stopCounter() {
         if (!this.startTime) {
-            this.showError('请先开始摸鱼！');
+            this.showError('请先开始上班！');
             return;
         }
 
